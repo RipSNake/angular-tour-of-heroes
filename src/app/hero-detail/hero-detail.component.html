@@ -1,0 +1,18 @@
+<!-- 
+	<div *ngIf="condition"> 
+		<child> </childs>
+	</div>
+	
+	Hides the tag an all its child's elements if the condition doesn't fulfills
+-->
+<p>Hero Details works!</p>
+
+<div *ngIf="hero">
+	<h2>{{hero.name | uppercase}} Details</h2>
+
+	<p><span>id: </span> {{hero.id}}</p>
+
+	<label>name: <input [(ngModel)]="hero.name" placeholder="name"> </label>
+</div>
+<button (click)="save()">Save</button>
+<button (click)="goBack()">Back</button>
